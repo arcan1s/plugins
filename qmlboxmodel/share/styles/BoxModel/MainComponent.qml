@@ -134,6 +134,7 @@ Item {
                     elide: Text.ElideRight
                     font.pixelSize: (preferences.item_description_fontsize+preferences.item_title_fontsize)/2
                     color: ListView.isCurrentItem ? preferences.highlight_color : preferences.foreground_color
+                    renderType: Text.NativeRendering
                     Behavior on color { ColorAnimation{ duration: preferences.animation_duration } }
                     MouseArea {
                         anchors.fill: parent

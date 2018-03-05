@@ -81,6 +81,7 @@ Item {
             color: listItem.ListView.isCurrentItem ? listItem.highlightColor : listItem.textColor
             font.family: listItem.fontName
             font.pixelSize: listItem.textSize
+            renderType: Text.NativeRendering
             Behavior on color { ColorAnimation{ duration: animationDuration } }
          }
         Text {
@@ -91,6 +92,7 @@ Item {
             color: listItem.ListView.isCurrentItem ? listItem.highlightColor : listItem.textColor
             font.family: listItem.fontName
             font.pixelSize: listItem.descriptionSize
+            renderType: Text.NativeRendering
             Behavior on color { ColorAnimation{ duration: animationDuration } }
             Behavior on text {
                 SequentialAnimation {
